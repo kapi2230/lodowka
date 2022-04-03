@@ -1,8 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+// import "./App.css";
+import { observer } from "mobx-react-lite";
+import Button from "./components/Button/Button";
+import LoginScreen from "./screens/LoginScreen";
 
-function App() {
+const App: React.FC = observer(() => {
   return (
     <div className="App">
       <header className="App-header">
@@ -18,9 +21,11 @@ function App() {
         >
           Learn React
         </a>
+        <Button />
+        <LoginScreen />
       </header>
     </div>
   );
-}
+});
 
 export default App;
