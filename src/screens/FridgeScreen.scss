@@ -1,0 +1,36 @@
+.content {
+  ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background-color: rgb(24, 25, 26);
+    border-radius: 10px;
+
+    li {
+      padding: 0px 20px;
+      display: grid;
+      place-items: center start;
+      grid-template-columns: 80% 10% auto;
+      height: 5vh;
+      border-radius: 10px;
+      border-bottom: 1px solid;
+      border-color: rgb(158, 158, 158);
+
+      p {
+        margin: 0px;
+        font-size: 25px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: white;
+
+        &.expired {
+          color: red;
+        }
+      }
+    }
+
+    li:hover {
+      background-color: rgb(158, 158, 158);
+    }
+  }
+}
